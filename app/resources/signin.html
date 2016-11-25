@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet"  href="styles/styles.css">	
+</head>
+<body>
+	<div class="form-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-4">
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt=" Voda.company">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-4">
+					<h2>Вход</h2>
+				</div>
+			</div>
+			
+			<form method="post" action="login.php" autocomplete="on">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1">
+						<input type="text" name="email" required="required"  placeholder="mail@mail.net"/>						
+					</div>
+					<div class="col-md-5">
+						<input type="password" name="password" required="required"  placeholder="Пароль:" >
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 ">
+					<div class="label">
+						<label for="capture">Подтвердите действие</label>
+						</div>						
+					</div>
+					<div class="col-md-5">
+						<div class="g-recaptcha" data-sitekey="ddd"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						<button name="signin" class="btn-wrap" type="submit" value="войти">войти</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<div class="footer__inner">		
+		</div>
+	</footer>
+
+	
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="scripts/bundle.min.js"></script>	
+	
+</body>
+</html>

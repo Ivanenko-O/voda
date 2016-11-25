@@ -1,0 +1,35 @@
+.top-header-login {
+	height: 115px;
+	background-color: $primary-color;
+		
+
+	&::after {
+		position: absolute;
+		display: block;
+		content: "";
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-image: url('../images/icons/wave.png');
+		background-position: bottom;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	
+	img {
+		margin: 20px;
+	}
+
+	p {
+		position: absolute;
+		top: 50%;
+   		text-align: center;
+    	transform: translate(30%, -50%);
+	}
+
+	.person-name {
+		line-height: 40px;
+	}
+	
+}

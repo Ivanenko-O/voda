@@ -1,0 +1,38 @@
+/** 
+ * ----------------------------------------------------------------------- * 
+ * Mixin helper to calculate width or height for element 
+ * ----------------------------------------------------------------------- * 
+**/ 
+@mixin calc($property, $expression) { 
+
+	#{$property}: -moz-calc(#{$expression}); 
+	#{$property}: -webkit-calc(#{$expression}); 
+	#{$property}: calc(#{$expression}); 
+
+}
+
+/** 
+ * ----------------------------------------------------------------------- * 
+ * Mixin helper to use material design icons just in SCSS 
+ * ----------------------------------------------------------------------- * 
+**/
+@mixin mdi-icon($icon-name) { 
+	font: normal normal normal 24px/1 #{$mdi-font-name}; 
+	content: mdi(#{$icon-name}); 
+}
+
+/** 
+ * ----------------------------------------------------------------------- * 
+ * Mixin help to manage for responsive 
+ * ----------------------------------------------------------------------- * 
+**/
+@mixin respond-to($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media #{inspect(map-get($breakpoints, $breakpoint))} {
+			@content;
+		}
+	} @else {
+		@error 'Не указано значение для `#{$breakpoint}`. '
+		+ 'Пожалуйста, убедитесь, что точка остановки объявлена в карте `$breakpoints`.';
+	}
+}

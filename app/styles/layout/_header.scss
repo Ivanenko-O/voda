@@ -1,0 +1,69 @@
+header {
+	padding: 15px 0;
+
+	.logo {
+		float: left;
+		width: 130px;
+		height: 105px;
+		padding-left: 10px;
+	}
+	
+	.top-menu-center {
+		float: left;
+		width: 59%;
+		line-height: 115px;
+
+		li {
+			float: left;
+			padding: 0 15px;
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+
+		a {
+			color: $primary-text;
+			text-transform: uppercase;
+			text-decoration: none;
+
+				&:hover, &:focus, &:active {
+					padding-bottom: 10px;
+					border-bottom: 3px solid;
+					border-color: $accent;
+					// transition: .2s;
+				}
+
+			&.active {
+				color: $accent;
+			}
+		}
+	}
+
+	.top-menu-right {
+		float: right;
+		padding: 0 10px;
+	}
+
+	.top-menu-right-item {
+		float: left;
+		line-height: 115px;
+	}
+
+	.button-exit {
+		font-size: 15px;
+		padding: 0;
+		margin: 0;
+		border-bottom: 3px solid;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: $accent;
+	}
+}
+
+.icons {
+	vertical-align: sub;
+	margin: 10px 10px 0 15px;
+
+}

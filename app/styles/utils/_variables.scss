@@ -1,0 +1,18 @@
+$blue: #2087e1;
+$white: #ffffff; 
+$black: #000000;
+$grey: #374751;
+
+$primary-color: $white;
+$primary-text: $black;
+$accent: $blue;
+
+
+$breakpoints: (
+	'xs': (min-width: 300px),
+	'sm': (max-width: 560px),
+	'md': (max-width: 800px),
+	'lg': (max-width: 1000px),
+	'xl': (min-width: 1200px)
+);
+
